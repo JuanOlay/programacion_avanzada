@@ -1,4 +1,4 @@
-##User Stories
+#User Stories
 
 1 As a vehicle manufacturer, I want to show the client the variety of vehicles we handle so that the client can choose according to their needs.
 2 As a buyer, I want to see the vehicles that I have created with their characteristics for
