@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Motores</title>
+<body>
+    <table>
+        <tr>
+            <th>Nombre</th>
+            <th>tipo de motor</th>
+            <th>peso</th>
+            <th>Potencia</th>
+            <th></th>
+
+            {% for engine in engines %} 
+                <tr>
+                    <td>{{ engine.name }}</td>
+                    <td>{{ engine.type_of_engine }}</td>
+                    <td>{{ engine.weight }}</td>
+                    <td>{{ engine.potency }}</td>
+                </tr>
+            {% endfor %}
+        </tr>
+    </table>
+    <footer>
+        <p>&copy; 2024 workshop3 UD</p>
+    </footer>  
+</body>
+</html>

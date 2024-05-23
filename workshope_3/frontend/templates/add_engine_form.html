@@ -1,0 +1,43 @@
+{% load static %}
+<html lang="es">
+<head>
+    <title>Form engines</title>
+    <meta charset="UTF-8">
+    <meta name="author" content="Juan Guevara">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="add_engine_form.js" defer></script>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+
+</head>
+<body>
+    <div class="form-container">
+        <form id="add-engine-form" class="form-group">
+            <div class="form-title">AÑADIR Motor</div>
+            <label for="name">Nombre del motor</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="type_of_engine">Tipo de Motor:</label>
+            <input type="text" id="type_of_engine" name="type_of_engine" required>
+
+            <label for="weight">Peso:</label>
+            <input type="number" id="weight" name="weight" required>
+
+            <label for="potency">Potencia:</label>
+            <input type="number" id="potency" name="potency">
+         
+
+            <div class="form-group">
+                <br>
+                <br>
+                <button type="button" onclick="save_engine()">Guardar Motor</button>
+                <a href="web_gui/index.html">
+                    <button type="button">Volver</button>
+                </a>
+            </div>
+        </form>
+    </div>
+    <footer>
+        <p>&copy; workshop 3 UD</p>
+    </footer>  
+</body>
+</html>

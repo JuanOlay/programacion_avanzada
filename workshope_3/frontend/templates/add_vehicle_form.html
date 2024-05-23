@@ -1,0 +1,59 @@
+{% load static %}
+<html lang="es">
+<head>
+    <title>Form vehicles</title>
+    <meta charset="UTF-8">
+    <meta name="author" content="Juan Guevara">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="add_vehicle_form.js" defer></script>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+
+</head>
+<body>
+    <div class="form-container">
+        <form id="add-engine-form" class="form-group">
+            <div class="form-title">AÑADIR Vehiculo</div>
+            <label for="name">Nombre del vehiculo</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="type_of_vehicle">tipo de vehiculo</label>
+            <select>
+                <option value="carrito">carrito</option>
+                <option value="tractor">tractor</option>
+                <option value="yate">yate</option>
+                <option value="moto">moto</option>
+             </select>
+
+            <label for="year">Año:</label>
+            <input type="number" id="year" name="year" required>
+
+            <label for="chasis">chasis:</label>
+            <input type="text" id="chasis" name="chasis" required>
+
+            <label for="modelo">modelo:</label>
+            <input type="text" id="modelo" name="modelo">
+
+            <label for="engine">Elija Motor:</label>
+            <select>
+                <option value="opcion1">Motor 1</option>
+                <option value="opcion2">Motor 2</option>
+                <option value="opcion3">Motor 3</option>
+                <option value="opcion4">Motor 4</option>
+             </select>
+         
+
+            <div class="form-group">
+                <br>
+                <br>
+                <button type="button" onclick="save_vehicle()">Guardar vehiculo</button>
+                <a href="web_gui/index.html">
+                    <button type="button">Volver</button>
+                </a>
+            </div>
+        </form>
+    </div>
+    <footer>
+        <p>&copy; workshop 3 UD</p>
+    </footer>  
+</body>
+</html>
