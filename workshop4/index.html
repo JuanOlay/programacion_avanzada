@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <title>Workshop 4 - AP</title>
+        <meta charset="UTF-8">
+        <meta name="description" content="This is a simple example to explore OSI layers in a simple network">
+        <link rel="stylesheet" type="text/css" href="styles.css">
+        <!--se agrego para que se escalalice al tamaño de la pantalla-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- el nombre del archivo taba mal :v-->
+    </head>
+    <body>
+        <h1>Workshop 4 - AP</h1>
+        <h2>Full-Stack Test</h2>
+        <p>Click on the buttons to explore services</p>
+        <div>
+            <!-- se agrega javasccript antes del llamado de las funciones -->
+            <button onclick="javascript:callMessage()">Get Message</button>
+            <button onclick="javasccript:callTable()">Get Table</button>
+        </div>
+        <div id="result"></div>
+        <!-- se movio la importacion del javascript a lo ultimo porque aveces da error porque no se ha cargado todos los elementos del html que el javascript necesita -->
+        <script src="function.js"></script>
+    </body>
+</html>
